@@ -12,5 +12,25 @@ public class App {
         else {
             System.out.println("Statement is false, result =  " + result);
         }
+
+        int a = 5;
+
+        for(int i = 0; i <= a; i++) {
+            switch (i) {
+                case 1:
+                    System.out.println("a je jedna");
+                    break;
+                case 2:
+                    System.out.println("a je dva");
+                    break;
+                case 3:
+                case 4:
+                    System.out.println("a je tri ale bo styri");
+                    break;
+                default:
+                    System.out.println(String.format("a je %d", i));
+                    break;
+            }
+        }
     }
 }
