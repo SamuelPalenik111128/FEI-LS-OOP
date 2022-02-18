@@ -2,18 +2,10 @@ package org.example;
 
 public class App {
     public static void main(String[] args) {
+        System.out.println("5 + 7 = " + App.scitaj(5, 7));
+    }
 
-        int a = 0;
-        int b = 0;
-
-        while (a < 5) {
-            System.out.println("a = " + a);
-            a++;
-        }
-
-        do {
-            System.out.println("b = " + b);
-            b++;
-        } while (b < 2);
+    static int scitaj(int a, int b){
+        return a + b;
     }
 }
