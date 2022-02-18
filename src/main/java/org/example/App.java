@@ -14,6 +14,12 @@ public class App {
         boolean logical = true;
 
         int podiel = 2/3;   // =0
+        System.out.println(podiel);
+
         int modulo = 2%3;   // =2
+        System.out.println(modulo);
+
+        float podielDesatinny = 2/3.0f;
+        System.out.println(podielDesatinny);
     }
 }
