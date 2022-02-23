@@ -1,24 +1,17 @@
 package org.example;
 
+import java.util.Objects;
+import java.util.Scanner;
+
 public class App {
     public static void main(String[] args) {
-        System.out.println("Dlzka: " + args.length);
+        Scanner klavesnica = new Scanner(System.in);
+        String a = "a";
+        String b = "a";
+        System.out.println("Zadaj pismeno: ");
+        String c = klavesnica.nextLine();
 
-        for(int i = 0; i < args.length; i++){
-            System.out.println(args[i]);
-        }
-
-        int[] pole = new int[10];
-        for(int i = 0; i < pole.length; i++){
-            if(i == 0){
-                pole[i] = 1;
-                continue;
-            }
-            pole[i] = pole[i - 1] * 2;
-        }
-
-        for(int i = 0; i < pole.length; i++){
-            System.out.println(i + " : " + pole[i]);
-        }
+        System.out.println("Equals:" + Objects.equals(a, c));
+        System.out.println("Equals:" + b.equals(c));
     }
 }
